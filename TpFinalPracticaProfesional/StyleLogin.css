@@ -1,0 +1,141 @@
+﻿body {
+    margin: 225px;
+    padding: 0;
+    /*background: url('../Recursos/ImagenLogin.jpg');*/
+    background-color:cornflowerblue !important;
+    /*background-position: 50% 60%;*/
+    background-repeat: no-repeat;
+    font-family: Arial;
+    background-size:cover;
+}
+.LoginP{
+    width: 320px;
+    height: 420px;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#TxtUsuario, #TxtContraseña {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    top: 0px;
+    left: 0px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+}
+
+.LoginP p{
+    margin: 0;
+    padding: 0;
+    font-weight:bold;
+}
+
+#BotonIngresar {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #6677BC;
+    /*background: #1c8adb;*/
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#BotonIngresar:hover {
+    cursor: pointer;
+    background: lightsteelblue;
+    /*background: #39dc79;*/
+    /*color: lightsteelblue;*/
+    color: #6677BC;
+}
+
+.LoginP a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.LoginP a:hover{
+    color: #39dc79;
+}
+
+#LBAtras {
+    background-image: url('Recursos/AtrasNegro.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.ValiUser {
+    background-color: #39dc79;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: 14px;
+    left: 260px;
+}
+
+.ValiUser:before {
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #39dc79;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+.ValiPass {
+    background-color: #39dc79;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: 106px;
+    left: 260px;
+}
+
+.ValiPass:before {
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #39dc79;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}

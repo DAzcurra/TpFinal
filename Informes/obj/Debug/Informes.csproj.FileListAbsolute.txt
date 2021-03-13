@@ -1,0 +1,14 @@
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\Informes.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\Informes.pdb
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\Entidades.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\Entidades.pdb
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\bin\Debug\Entidades.dll.config
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\obj\Debug\Informes.csproj.CoreCompileInputs.cache
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\obj\Debug\Informes.csproj.CopyComplete
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\obj\Debug\Informes.dll
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\obj\Debug\Informes.pdb
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Informes\obj\Debug\Informes.csprojAssemblyReference.cache

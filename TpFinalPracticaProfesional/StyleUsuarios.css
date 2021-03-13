@@ -1,0 +1,256 @@
+﻿body {
+    margin: 0;
+    padding: 0px;
+    background-color: #FAFAE7;
+    background-position: 50% 60%; /*46.80%*/
+    position: static;
+    font-family: Arial;
+}
+#ContenedorCentral {
+    float: left;
+    width: 82%;
+    min-height: 500px;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    left: 235px;
+}
+#LBUsuario{
+    background-image: url('Recursos/contraseña-50.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#BotonModificar {
+    background-image: url('Recursos/Candado.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#LBAtras {
+    background-image: url('Recursos/AtrasNegro.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+ul {
+    box-shadow: black 0.1em 0.1em 0.2em;
+}
+
+h2 {
+    color: red;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    font: bold;
+}
+
+h1 {
+    color: black;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.PanelPersonalizado {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: black 0.1em 0.1em 0.2em;
+    border: groove;
+    border-color: #6677BC;
+}
+.hrclass {
+    background-color: #6677BC;
+}
+.Boton {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    outline: none;
+    background: #6677BC;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+    .Boton:hover {
+        border-style: none;
+        border-color: inherit;
+        border-width: medium;
+        outline: none;
+        background: lightsteelblue;
+        color: #6677BC;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+.Textos {
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.Labels {
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 2px;
+    text-align: center;
+}
+.Vali {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: 132px;
+    left: -20px;
+    z-index: 10001 !important;
+}
+
+    .Vali:before {
+        content: '';
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid #BC1010;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        left: 85px;
+        position: absolute;
+        top: -15px;
+        z-index: 10001 !important;
+    }
+.Vali2 {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: -5px;
+    left: 792px;
+}
+
+.Vali2:before {
+        content: '';
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #BC1010;
+        border-left: 8px solid transparent;
+        left: -16px;
+        position: absolute;
+        top: 5px;
+}
+.Vali2B {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: -3px;
+    left: 792px;
+}
+
+    .Vali2B:before {
+        content: '';
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid #BC1010;
+        border-left: 8px solid transparent;
+        left: -16px;
+        position: absolute;
+        top: 5px;
+    }
+
+.Vali1 {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: -3px;
+    left: 792px;
+}
+
+.Vali1:before {
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+.Vali1B {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: -3px;
+    left: 792px;
+}
+
+.Vali1B:before {
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+.Vali2C {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: -3px;
+    left: 792px;
+}
+
+.Vali2C:before {
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+
+.ValiNoCoincide {
+    background-color: #BC1010;
+    padding: 6px 40px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    top: 514px;
+    left: 792px;
+}

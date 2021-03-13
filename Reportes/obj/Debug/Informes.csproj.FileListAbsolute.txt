@@ -1,0 +1,2 @@
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Reportes\obj\Debug\Informes.csprojAssemblyReference.cache
+C:\Users\Daiana\Desktop\TpFinalPracticaProfesional\Reportes\obj\Debug\Informes.csproj.CoreCompileInputs.cache

@@ -1,0 +1,218 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color:lightsteelblue;
+    /*color: lightsteelblue;*/
+    /*background-color:#FAFAE7;*/
+    /*background-color: lightsteelblue;*/
+    background-position: bottom;
+    position: static;
+    font-family: Arial;
+}
+
+.BotonSalir {
+    position: absolute;
+    top:20px;
+    left:95%;
+}
+.LabelSalir {
+    position: absolute;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    top: 30px;
+    left:88.5%;
+    color: white;
+}
+#BtnSalir{
+    background-image: url('../Recursos/Power-48.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:red;
+    border: none;
+}
+#BtnSalir:hover {
+    background-image: url('../Recursos/Power-48 (1).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+#LbProar {
+    color: red;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#LBtnEmpleados {
+    background-image:url('../Recursos/UserEmpleado.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: none;
+}
+
+    #LBtnEmpleados:hover {
+        background-image: url('../Recursos/UserEmpleadoNegro.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+    }
+
+#LBtnFacturacion {
+    background-image: url('../Recursos/Facturacion.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#LBtnFacturacion:hover {
+    background-image: url('../Recursos/FacturacionNegro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#LBtnProveedores {
+    background-image: url('../Recursos/Camion.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+ #LBtnProveedores:hover {
+     background-image: url('../Recursos/CamionNegro.png');
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+#LBtnPedidos {
+    background-image: url('../Recursos/Pedido.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#LBtnPedidos:hover {
+    background-image: url('../Recursos/PedidoNegro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#LBtnArticulos {
+    background-image: url('../Recursos/Articulo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#LBtnArticulos:hover {
+    background-image: url('../Recursos/ArticuloNegro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#LBtnClientes {
+    background-image: url('../Recursos/UserClientes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#LBtnClientes:hover {
+    background-image: url('../Recursos/UserClientesNegro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#LBtnManual {
+    background-image: url('../Recursos/ManualMenuB.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+    #LBtnManual:hover {
+        background-image: url('../Recursos/ManualMenuN.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+#LBtnUsuario {
+    background-image: url('../Recursos/UsuarioB.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+    #LBtnUsuario:hover {
+        background-image: url('../Recursos/UsuarioN.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.TextoAbajoIzq {
+    text-align: left !important;
+    padding: 106px 16px 3px 15px !important;
+}
+.PanelPop2 {
+    border: 1px solid black;
+    background-color: #DAC09E;
+    box-shadow: black 0.1em 0.1em 0.2em;
+    width: auto;
+    height:auto;
+    max-height: 600px;
+}
+.scrolling-table-container {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    top: 0px;
+    left: 0px;
+}
+.scrolling-table-container2 {
+    height: auto;
+    overflow-y: scroll ;
+    overflow-x: scroll;
+    top: 0px;
+    left: 0px;
+}
+/*.BotonBus {
+    position: absolute;
+    top: 94px;
+    left: 10px;
+}*/
+.Boton {
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    outline: none;
+    background: #6677BC;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Boton:hover {
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    outline: none;
+    background: lightsteelblue;
+    color: #6677BC;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Titulo {
+    font-size: 38px;
+    color: black;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: center;
+}
+

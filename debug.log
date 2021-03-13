@@ -1,0 +1,26 @@
+[0411/044202.898:ERROR:process_reader_win.cc(242)] ReadMemory at 0x1b76a384d70 of 72 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0411/044202.907:WARNING:pe_image_annotations_reader.cc(133)] could not read annotations list object in C:\Program Files (x86)\Google\Chrome\Application\65.0.3325.181\chrome_child.dll
+[0417/025023.225:ERROR:process_info.cc(359)] UncheckedAllocate
+[0518/012333.093:ERROR:process_info.cc(359)] UncheckedAllocate
+[0518/012342.556:ERROR:process_info.cc(359)] UncheckedAllocate
+[0518/012350.057:ERROR:process_info.cc(359)] UncheckedAllocate
+[0518/012411.060:ERROR:process_info.cc(359)] UncheckedAllocate
+[0711/034203.934:ERROR:process_info.cc(359)] UncheckedAllocate
+[0711/043502.043:ERROR:process_info.cc(359)] UncheckedAllocate
+[0711/043506.759:ERROR:process_info.cc(359)] UncheckedAllocate
+[0711/045333.386:ERROR:process_info.cc(359)] UncheckedAllocate
+[0712/211940.585:ERROR:process_info.cc(359)] UncheckedAllocate
+[0712/230559.336:ERROR:process_info.cc(359)] UncheckedAllocate
+[0713/001652.593:ERROR:process_info.cc(359)] UncheckedAllocate
+[0713/001740.740:ERROR:process_info.cc(359)] UncheckedAllocate
+[0713/001933.135:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/015654.963:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/031303.762:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/031401.869:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/032331.364:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/043324.177:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/045940.820:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/045941.953:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/045956.008:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/052722.866:ERROR:process_info.cc(359)] UncheckedAllocate
+[0717/053535.716:ERROR:process_info.cc(359)] UncheckedAllocate

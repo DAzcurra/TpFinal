@@ -1,0 +1,1330 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F043632B-9C95-4E59-BD44-5A2B33327C6B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TpFinalPracticaProfesional</RootNamespace>
+    <AssemblyName>TpFinalPracticaProfesional</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.licensekey">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\itextsharp.licensekey.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp-dll-pdfa\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xfaworker">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\itextsharp.xfaworker.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Jint">
+      <HintPath>..\..\itextsharp-all-5.5.10\itextsharp.xfaworker-dll-5.5.10\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgregarArticulo.aspx" />
+    <Content Include="AgregarCliente.aspx" />
+    <Content Include="AgregarEmpleado.aspx" />
+    <Content Include="AgregarFactura.aspx" />
+    <Content Include="AgregarPedido.aspx" />
+    <Content Include="AgregarProveedor.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Conexiones.dll" />
+    <Content Include="bin\Conexiones.pdb" />
+    <Content Include="bin\Controladoras.dll" />
+    <Content Include="bin\Controladoras.pdb" />
+    <Content Include="bin\Entidades.dll" />
+    <Content Include="bin\Entidades.pdb" />
+    <Content Include="bin\EntidadesDTO.dll" />
+    <Content Include="bin\EntidadesDTO.pdb" />
+    <Content Include="bin\Interfaces.dll" />
+    <Content Include="bin\Interfaces.pdb" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\itextsharp.licensekey.dll" />
+    <Content Include="bin\itextsharp.pdfa.dll" />
+    <Content Include="bin\itextsharp.xfaworker.dll" />
+    <Content Include="bin\itextsharp.xmlworker.dll" />
+    <Content Include="bin\Jint.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\Repositorios.dll" />
+    <Content Include="bin\Repositorios.pdb" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\TpFinalPracticaProfesional.dll.config" />
+    <Content Include="build\css\maps\metro-colors.css.map" />
+    <Content Include="build\css\maps\metro-icons.css.map" />
+    <Content Include="build\css\maps\metro-rtl.css.map" />
+    <Content Include="build\css\maps\metro.css.map" />
+    <Content Include="build\css\maps\red-alert-sans.css.map" />
+    <Content Include="build\css\maps\red-alert.css.map" />
+    <Content Include="build\js\metro.min.js.map" />
+    <Content Include="build\mif\metro.json" />
+    <Content Include="build\mif\metro.ttf" />
+    <Content Include="build\mif\metro.woff" />
+    <Content Include="dist\sweetalert-dev.js" />
+    <Content Include="dist\sweetalert.css" />
+    <Content Include="dist\sweetalert.min.js" />
+    <Content Include="EditarPedido.aspx" />
+    <Content Include="EstadoPedido.aspx" />
+    <Content Include="jdigiclock-master\images\background.png" />
+    <Content Include="jdigiclock-master\images\clock\0-1.png" />
+    <Content Include="jdigiclock-master\images\clock\0-2.png" />
+    <Content Include="jdigiclock-master\images\clock\0-3.png" />
+    <Content Include="jdigiclock-master\images\clock\0.png" />
+    <Content Include="jdigiclock-master\images\clock\001-1.png" />
+    <Content Include="jdigiclock-master\images\clock\001-2.png" />
+    <Content Include="jdigiclock-master\images\clock\001-3.png" />
+    <Content Include="jdigiclock-master\images\clock\01-1.png" />
+    <Content Include="jdigiclock-master\images\clock\01-2.png" />
+    <Content Include="jdigiclock-master\images\clock\01-3.png" />
+    <Content Include="jdigiclock-master\images\clock\1-1.png" />
+    <Content Include="jdigiclock-master\images\clock\1-2.png" />
+    <Content Include="jdigiclock-master\images\clock\1-3.png" />
+    <Content Include="jdigiclock-master\images\clock\1.png" />
+    <Content Include="jdigiclock-master\images\clock\11-1.png" />
+    <Content Include="jdigiclock-master\images\clock\11-2.png" />
+    <Content Include="jdigiclock-master\images\clock\11-3.png" />
+    <Content Include="jdigiclock-master\images\clock\111-1.png" />
+    <Content Include="jdigiclock-master\images\clock\111-2.png" />
+    <Content Include="jdigiclock-master\images\clock\111-3.png" />
+    <Content Include="jdigiclock-master\images\clock\2-1.png" />
+    <Content Include="jdigiclock-master\images\clock\2-2.png" />
+    <Content Include="jdigiclock-master\images\clock\2-3.png" />
+    <Content Include="jdigiclock-master\images\clock\2.png" />
+    <Content Include="jdigiclock-master\images\clock\21-1.png" />
+    <Content Include="jdigiclock-master\images\clock\21-2.png" />
+    <Content Include="jdigiclock-master\images\clock\21-3.png" />
+    <Content Include="jdigiclock-master\images\clock\211-1.png" />
+    <Content Include="jdigiclock-master\images\clock\211-2.png" />
+    <Content Include="jdigiclock-master\images\clock\211-3.png" />
+    <Content Include="jdigiclock-master\images\clock\3-1.png" />
+    <Content Include="jdigiclock-master\images\clock\3-2.png" />
+    <Content Include="jdigiclock-master\images\clock\3-3.png" />
+    <Content Include="jdigiclock-master\images\clock\3.png" />
+    <Content Include="jdigiclock-master\images\clock\31-1.png" />
+    <Content Include="jdigiclock-master\images\clock\31-2.png" />
+    <Content Include="jdigiclock-master\images\clock\31-3.png" />
+    <Content Include="jdigiclock-master\images\clock\311-1.png" />
+    <Content Include="jdigiclock-master\images\clock\311-2.png" />
+    <Content Include="jdigiclock-master\images\clock\311-3.png" />
+    <Content Include="jdigiclock-master\images\clock\4-1.png" />
+    <Content Include="jdigiclock-master\images\clock\4-2.png" />
+    <Content Include="jdigiclock-master\images\clock\4-3.png" />
+    <Content Include="jdigiclock-master\images\clock\4.png" />
+    <Content Include="jdigiclock-master\images\clock\41-1.png" />
+    <Content Include="jdigiclock-master\images\clock\41-2.png" />
+    <Content Include="jdigiclock-master\images\clock\41-3.png" />
+    <Content Include="jdigiclock-master\images\clock\5-1.png" />
+    <Content Include="jdigiclock-master\images\clock\5-2.png" />
+    <Content Include="jdigiclock-master\images\clock\5-3.png" />
+    <Content Include="jdigiclock-master\images\clock\5.png" />
+    <Content Include="jdigiclock-master\images\clock\51-1.png" />
+    <Content Include="jdigiclock-master\images\clock\51-2.png" />
+    <Content Include="jdigiclock-master\images\clock\51-3.png" />
+    <Content Include="jdigiclock-master\images\clock\511-1.png" />
+    <Content Include="jdigiclock-master\images\clock\511-2.png" />
+    <Content Include="jdigiclock-master\images\clock\511-3.png" />
+    <Content Include="jdigiclock-master\images\clock\6-1.png" />
+    <Content Include="jdigiclock-master\images\clock\6-2.png" />
+    <Content Include="jdigiclock-master\images\clock\6-3.png" />
+    <Content Include="jdigiclock-master\images\clock\6.png" />
+    <Content Include="jdigiclock-master\images\clock\7-1.png" />
+    <Content Include="jdigiclock-master\images\clock\7-2.png" />
+    <Content Include="jdigiclock-master\images\clock\7-3.png" />
+    <Content Include="jdigiclock-master\images\clock\7.png" />
+    <Content Include="jdigiclock-master\images\clock\8-1.png" />
+    <Content Include="jdigiclock-master\images\clock\8-2.png" />
+    <Content Include="jdigiclock-master\images\clock\8-3.png" />
+    <Content Include="jdigiclock-master\images\clock\8.png" />
+    <Content Include="jdigiclock-master\images\clock\9-1.png" />
+    <Content Include="jdigiclock-master\images\clock\9-2.png" />
+    <Content Include="jdigiclock-master\images\clock\9-3.png" />
+    <Content Include="jdigiclock-master\images\clock\9.png" />
+    <Content Include="jdigiclock-master\images\clock\am.png" />
+    <Content Include="jdigiclock-master\images\clock\apm.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg-blank.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg1.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg2.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg3.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg4.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg5.png" />
+    <Content Include="jdigiclock-master\images\clock\clockbg6.png" />
+    <Content Include="jdigiclock-master\images\clock\pm.png" />
+    <Content Include="jdigiclock-master\images\refresh_grey.png" />
+    <Content Include="jdigiclock-master\images\refresh_red.png" />
+    <Content Include="jdigiclock-master\images\weather\aw1.png" />
+    <Content Include="jdigiclock-master\images\weather\aw11.png" />
+    <Content Include="jdigiclock-master\images\weather\aw12.png" />
+    <Content Include="jdigiclock-master\images\weather\aw13.png" />
+    <Content Include="jdigiclock-master\images\weather\aw14.png" />
+    <Content Include="jdigiclock-master\images\weather\aw15.png" />
+    <Content Include="jdigiclock-master\images\weather\aw16.png" />
+    <Content Include="jdigiclock-master\images\weather\aw17.png" />
+    <Content Include="jdigiclock-master\images\weather\aw18.png" />
+    <Content Include="jdigiclock-master\images\weather\aw19.png" />
+    <Content Include="jdigiclock-master\images\weather\aw2.png" />
+    <Content Include="jdigiclock-master\images\weather\aw20.png" />
+    <Content Include="jdigiclock-master\images\weather\aw21.png" />
+    <Content Include="jdigiclock-master\images\weather\aw22.png" />
+    <Content Include="jdigiclock-master\images\weather\aw23.png" />
+    <Content Include="jdigiclock-master\images\weather\aw24.png" />
+    <Content Include="jdigiclock-master\images\weather\aw25.png" />
+    <Content Include="jdigiclock-master\images\weather\aw26.png" />
+    <Content Include="jdigiclock-master\images\weather\aw27.png" />
+    <Content Include="jdigiclock-master\images\weather\aw29.png" />
+    <Content Include="jdigiclock-master\images\weather\aw3.png" />
+    <Content Include="jdigiclock-master\images\weather\aw30.png" />
+    <Content Include="jdigiclock-master\images\weather\aw31.png" />
+    <Content Include="jdigiclock-master\images\weather\aw32.png" />
+    <Content Include="jdigiclock-master\images\weather\aw33.png" />
+    <Content Include="jdigiclock-master\images\weather\aw34.png" />
+    <Content Include="jdigiclock-master\images\weather\aw35.png" />
+    <Content Include="jdigiclock-master\images\weather\aw36.png" />
+    <Content Include="jdigiclock-master\images\weather\aw37.png" />
+    <Content Include="jdigiclock-master\images\weather\aw38.png" />
+    <Content Include="jdigiclock-master\images\weather\aw39.png" />
+    <Content Include="jdigiclock-master\images\weather\aw4.png" />
+    <Content Include="jdigiclock-master\images\weather\aw40.png" />
+    <Content Include="jdigiclock-master\images\weather\aw41.png" />
+    <Content Include="jdigiclock-master\images\weather\aw42.png" />
+    <Content Include="jdigiclock-master\images\weather\aw43.png" />
+    <Content Include="jdigiclock-master\images\weather\aw44.png" />
+    <Content Include="jdigiclock-master\images\weather\aw5.png" />
+    <Content Include="jdigiclock-master\images\weather\aw6.png" />
+    <Content Include="jdigiclock-master\images\weather\aw7.png" />
+    <Content Include="jdigiclock-master\images\weather\aw8.png" />
+    <Content Include="jdigiclock-master\images\weather\blank.png" />
+    <Content Include="jdigiclock-master\images\weather\na.png" />
+    <Content Include="jdigiclock-master\images\weather\yw0.png" />
+    <Content Include="jdigiclock-master\images\weather\yw1.png" />
+    <Content Include="jdigiclock-master\images\weather\yw10.png" />
+    <Content Include="jdigiclock-master\images\weather\yw11.png" />
+    <Content Include="jdigiclock-master\images\weather\yw12.png" />
+    <Content Include="jdigiclock-master\images\weather\yw13.png" />
+    <Content Include="jdigiclock-master\images\weather\yw14.png" />
+    <Content Include="jdigiclock-master\images\weather\yw15.png" />
+    <Content Include="jdigiclock-master\images\weather\yw16.png" />
+    <Content Include="jdigiclock-master\images\weather\yw17.png" />
+    <Content Include="jdigiclock-master\images\weather\yw18.png" />
+    <Content Include="jdigiclock-master\images\weather\yw19.png" />
+    <Content Include="jdigiclock-master\images\weather\yw2.png" />
+    <Content Include="jdigiclock-master\images\weather\yw20.png" />
+    <Content Include="jdigiclock-master\images\weather\yw21.png" />
+    <Content Include="jdigiclock-master\images\weather\yw22.png" />
+    <Content Include="jdigiclock-master\images\weather\yw23.png" />
+    <Content Include="jdigiclock-master\images\weather\yw24.png" />
+    <Content Include="jdigiclock-master\images\weather\yw25.png" />
+    <Content Include="jdigiclock-master\images\weather\yw26.png" />
+    <Content Include="jdigiclock-master\images\weather\yw27.png" />
+    <Content Include="jdigiclock-master\images\weather\yw28.png" />
+    <Content Include="jdigiclock-master\images\weather\yw29.png" />
+    <Content Include="jdigiclock-master\images\weather\yw3.png" />
+    <Content Include="jdigiclock-master\images\weather\yw30.png" />
+    <Content Include="jdigiclock-master\images\weather\yw31.png" />
+    <Content Include="jdigiclock-master\images\weather\yw32.png" />
+    <Content Include="jdigiclock-master\images\weather\yw3200.png" />
+    <Content Include="jdigiclock-master\images\weather\yw33.png" />
+    <Content Include="jdigiclock-master\images\weather\yw34.png" />
+    <Content Include="jdigiclock-master\images\weather\yw35.png" />
+    <Content Include="jdigiclock-master\images\weather\yw36.png" />
+    <Content Include="jdigiclock-master\images\weather\yw37.png" />
+    <Content Include="jdigiclock-master\images\weather\yw38.png" />
+    <Content Include="jdigiclock-master\images\weather\yw39.png" />
+    <Content Include="jdigiclock-master\images\weather\yw4.png" />
+    <Content Include="jdigiclock-master\images\weather\yw40.png" />
+    <Content Include="jdigiclock-master\images\weather\yw41.png" />
+    <Content Include="jdigiclock-master\images\weather\yw42.png" />
+    <Content Include="jdigiclock-master\images\weather\yw43.png" />
+    <Content Include="jdigiclock-master\images\weather\yw44.png" />
+    <Content Include="jdigiclock-master\images\weather\yw45.png" />
+    <Content Include="jdigiclock-master\images\weather\yw46.png" />
+    <Content Include="jdigiclock-master\images\weather\yw47.png" />
+    <Content Include="jdigiclock-master\images\weather\yw5.png" />
+    <Content Include="jdigiclock-master\images\weather\yw6.png" />
+    <Content Include="jdigiclock-master\images\weather\yw7.png" />
+    <Content Include="jdigiclock-master\images\weather\yw8.png" />
+    <Content Include="jdigiclock-master\images\weather\yw9.png" />
+    <Content Include="jdigiclock-master\jquery.jdigiclock.css" />
+    <Content Include="jdigiclock-master\jquery.jdigiclock.js" />
+    <Content Include="jdigiclock-master\screenshot.png" />
+    <Content Include="ListarFactura.aspx" />
+    <Content Include="ListarPedido.aspx" />
+    <Content Include="MenuUsuario.aspx" />
+    <Content Include="MostrarManual.aspx" />
+    <Content Include="obj\dist\sweetalert-dev.js" />
+    <Content Include="obj\dist\sweetalert.css" />
+    <Content Include="obj\dist\sweetalert.min.js" />
+    <Content Include="docs\.htaccess" />
+    <Content Include="docs\css\site.less" />
+    <Content Include="docs\data\iforum.json" />
+    <Content Include="docs\data\schedule.json" />
+    <Content Include="docs\data\streamer_data.json" />
+    <Content Include="docs\data\streamer_data2.json" />
+    <Content Include="docs\data\streamer_data3.json" />
+    <Content Include="docs\examples\desktop\descktop.less" />
+    <Content Include="docs\examples\dialogs\dialogs.less" />
+    <Content Include="docs\examples\readme" />
+    <Content Include="docs\examples\tiles\start.less" />
+    <Content Include="docs\metro\css\maps\metro-colors.css.map" />
+    <Content Include="docs\metro\css\maps\metro-icons.css.map" />
+    <Content Include="docs\metro\css\maps\metro-rtl.css.map" />
+    <Content Include="docs\metro\css\maps\metro.css.map" />
+    <Content Include="docs\metro\css\maps\red-alert-sans.css.map" />
+    <Content Include="docs\metro\css\maps\red-alert.css.map" />
+    <Content Include="docs\metro\css\schemes\red-alert.css.map" />
+    <Content Include="docs\metro\js\metro.min.js.map" />
+    <Content Include="docs\metro\mif\metro.json" />
+    <Content Include="docs\metro\mif\metro.ttf" />
+    <Content Include="docs\metro\mif\metro.woff" />
+    <Content Include="docs\particles\particles.json" />
+    <Content Include="EditarArticulo.aspx" />
+    <Content Include="EditarCliente.aspx" />
+    <Content Include="EditarEmpleado.aspx" />
+    <Content Include="EditarProveedor.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="icons\metro.json" />
+    <Content Include="icons\metro.ttf" />
+    <Content Include="icons\metro.woff" />
+    <Content Include="less\accordion.less" />
+    <Content Include="less\animations.less" />
+    <Content Include="less\app-bar.less" />
+    <Content Include="less\border.less" />
+    <Content Include="less\buttons.less" />
+    <Content Include="less\calendar.less" />
+    <Content Include="less\calendarpicker.less" />
+    <Content Include="less\cards.less" />
+    <Content Include="less\carousel.less" />
+    <Content Include="less\charms.less" />
+    <Content Include="less\checkbox.less" />
+    <Content Include="less\colors.less" />
+    <Content Include="less\container.less" />
+    <Content Include="less\countdown.less" />
+    <Content Include="less\cube.less" />
+    <Content Include="less\datepicker.less" />
+    <Content Include="less\debug.less" />
+    <Content Include="less\default-icons.less" />
+    <Content Include="less\dialog.less" />
+    <Content Include="less\display.less" />
+    <Content Include="less\donut.less" />
+    <Content Include="less\draggable.less" />
+    <Content Include="less\embed.less" />
+    <Content Include="less\flex.less" />
+    <Content Include="less\float.less" />
+    <Content Include="less\form.less" />
+    <Content Include="less\forms-rtl.less" />
+    <Content Include="less\grid.less" />
+    <Content Include="less\hamburger.less" />
+    <Content Include="less\hints.less" />
+    <Content Include="less\icons.less" />
+    <Content Include="less\ie.less" />
+    <Content Include="less\images.less" />
+    <Content Include="less\include\mixins.less" />
+    <Content Include="less\include\vars.less" />
+    <Content Include="less\inputs.less" />
+    <Content Include="less\keypad.less" />
+    <Content Include="less\lists.less" />
+    <Content Include="less\listview.less" />
+    <Content Include="less\master.less" />
+    <Content Include="less\media-player.less" />
+    <Content Include="less\menu.less" />
+    <Content Include="less\metro-colors.less" />
+    <Content Include="less\metro-icons.less" />
+    <Content Include="less\metro-rtl.less" />
+    <Content Include="less\metro.less" />
+    <Content Include="less\navview.less" />
+    <Content Include="less\notify.less" />
+    <Content Include="less\overlay.less" />
+    <Content Include="less\panel.less" />
+    <Content Include="less\popovers.less" />
+    <Content Include="less\position.less" />
+    <Content Include="less\print.less" />
+    <Content Include="less\progress.less" />
+    <Content Include="less\radio.less" />
+    <Content Include="less\rating.less" />
+    <Content Include="less\reset.less" />
+    <Content Include="less\ribbon-menu.less" />
+    <Content Include="less\ripple.less" />
+    <Content Include="less\schemes\builder\builder.less" />
+    <Content Include="less\schemes\readme.md" />
+    <Content Include="less\schemes\red-alert-sans.less" />
+    <Content Include="less\schemes\red-alert.less" />
+    <Content Include="less\shadow.less" />
+    <Content Include="less\sidenav-counter.less" />
+    <Content Include="less\sidenav-m3.less" />
+    <Content Include="less\sizing.less" />
+    <Content Include="less\slider.less" />
+    <Content Include="less\spacing.less" />
+    <Content Include="less\stepper.less" />
+    <Content Include="less\streamer.less" />
+    <Content Include="less\switch.less" />
+    <Content Include="less\table.less" />
+    <Content Include="less\tabs.less" />
+    <Content Include="less\tiles-effects.less" />
+    <Content Include="less\tiles.less" />
+    <Content Include="less\timepicker.less" />
+    <Content Include="less\toast.less" />
+    <Content Include="less\topbar.less" />
+    <Content Include="less\treeview.less" />
+    <Content Include="less\typography.less" />
+    <Content Include="less\utils.less" />
+    <Content Include="less\wheelpicker.less" />
+    <Content Include="less\windows.less" />
+    <Content Include="less\wizard.less" />
+    <Content Include="ListaArticulo.aspx" />
+    <Content Include="ListaEmpleado.aspx" />
+    <Content Include="ListarCliente.aspx" />
+    <Content Include="ListarProveedor.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.csproj.CopyComplete" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.csprojResolveAssemblyReference.cache" />
+    <Content Include="MasterCliente.Master" />
+    <Content Include="MasterEmpleado.Master" />
+    <Content Include="MasterProveedor.Master" />
+    <Content Include="MasterArticulo.Master" />
+    <Content Include="MasterPedido.Master" />
+    <Content Include="Recursos\AgregarFac.png" />
+    <Content Include="Recursos\AgregarFactura.png" />
+    <Content Include="Recursos\AjustesNegro48.png" />
+    <Content Include="Recursos\Book-Open-48.png" />
+    <Content Include="Recursos\Cancel-32.png" />
+    <Content Include="Recursos\Candado.png" />
+    <Content Include="Recursos\Check-32.png" />
+    <Content Include="Recursos\contraseña-50.png" />
+    <Content Include="Recursos\descarga.png" />
+    <Content Include="Recursos\FacDelete.png" />
+    <Content Include="Recursos\FacEdit.png" />
+    <Content Include="Recursos\FacturacionNegro48.png" />
+    <Content Include="Recursos\ImagenLogin.jpg" />
+    <Content Include="Recursos\ImagenLogin2.jpg" />
+    <Content Include="Recursos\ImagenLogin3.jpg" />
+    <Content Include="Recursos\ManualMenuB.png" />
+    <Content Include="Recursos\ManualMenuN.png" />
+    <Content Include="Recursos\pedidotrasp.png" />
+    <Content Include="Recursos\Power-128 %281%29.png" />
+    <Content Include="Recursos\Power-128.png" />
+    <Content Include="Recursos\Power-48 %281%29.png" />
+    <Content Include="Recursos\Power-48.png" />
+    <Content Include="Recursos\prueba.jpg" />
+    <Content Include="Recursos\Stock-48.png" />
+    <Content Include="Recursos\UsuarioB.png" />
+    <Content Include="Recursos\UsuarioN.png" />
+    <Content Include="Stock.aspx" />
+    <Content Include="StyleUsuarios.css" />
+    <Content Include="StyleFacturacion.css" />
+    <Content Include="Warning.css" />
+    <Content Include="jdigiclock-master\LICENSE" />
+    <Content Include="jdigiclock-master\README.md" />
+    <Content Include="MasterFacturacion.Master" />
+    <Content Include="App_Data\revisar.docx" />
+    <Content Include="MasterUsuario.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.Process.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.DriveInfo.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.IO.Pipes.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Security.AccessControl.dll" />
+    <Content Include="bin\roslyn\System.Security.Claims.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Security.Principal.Windows.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Thread.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\TpFinalPracticaProfesional.dll" />
+    <Content Include="bin\TpFinalPracticaProfesional.pdb" />
+    <Content Include="build\css\metro-all.css" />
+    <Content Include="build\css\metro-all.min.css" />
+    <Content Include="build\css\metro-colors.css" />
+    <Content Include="build\css\metro-colors.min.css" />
+    <Content Include="build\css\metro-icons.css" />
+    <Content Include="build\css\metro-icons.min.css" />
+    <Content Include="build\css\metro-rtl.css" />
+    <Content Include="build\css\metro-rtl.min.css" />
+    <Content Include="build\css\metro.css" />
+    <Content Include="build\css\metro.min.css" />
+    <Content Include="build\css\schemes\red-alert-sans.css" />
+    <Content Include="build\css\schemes\red-alert-sans.min.css" />
+    <Content Include="build\css\schemes\red-alert.css" />
+    <Content Include="build\css\schemes\red-alert.min.css" />
+    <Content Include="build\js\metro.js" />
+    <Content Include="build\js\metro.min.js" />
+    <Content Include="build\mif\metro.svg" />
+    <Content Include="docs\accordion.html" />
+    <Content Include="docs\animation.html" />
+    <Content Include="docs\app-bar.html" />
+    <Content Include="docs\audio.html" />
+    <Content Include="docs\border.html" />
+    <Content Include="docs\browsers.html" />
+    <Content Include="docs\buttons.html" />
+    <Content Include="docs\calendar.html" />
+    <Content Include="docs\calendarpicker.html" />
+    <Content Include="docs\cards.html" />
+    <Content Include="docs\carousel.html" />
+    <Content Include="docs\charms.html" />
+    <Content Include="docs\clear.html" />
+    <Content Include="docs\collapse.html" />
+    <Content Include="docs\color-module.html" />
+    <Content Include="docs\colors.html" />
+    <Content Include="docs\configuring.html" />
+    <Content Include="docs\containers.html" />
+    <Content Include="docs\contents.html" />
+    <Content Include="docs\countdown.html" />
+    <Content Include="docs\css\site.css" />
+    <Content Include="docs\cube.html" />
+    <Content Include="docs\dateformat.html" />
+    <Content Include="docs\datepicker.html" />
+    <Content Include="docs\dialog.html" />
+    <Content Include="docs\display.html" />
+    <Content Include="docs\docsearch\docsearch.min.css" />
+    <Content Include="docs\docsearch\docsearch.min.js" />
+    <Content Include="docs\donut.html" />
+    <Content Include="docs\download.html" />
+    <Content Include="docs\draggable.html" />
+    <Content Include="docs\dropdown.html" />
+    <Content Include="docs\easing.html" />
+    <Content Include="docs\embed.html" />
+    <Content Include="docs\events.html" />
+    <Content Include="docs\examples\colors\color-schemes-2.html" />
+    <Content Include="docs\examples\colors\color-schemes-grayscale.html" />
+    <Content Include="docs\examples\colors\color-schemes.html" />
+    <Content Include="docs\examples\cube\cube-custom-func.html" />
+    <Content Include="docs\examples\cube\cube.html" />
+    <Content Include="docs\examples\datetime\datepicker.html" />
+    <Content Include="docs\examples\desktop\descktop.css" />
+    <Content Include="docs\examples\desktop\desktop.html" />
+    <Content Include="docs\examples\desktop\desktop.js" />
+    <Content Include="docs\examples\dialogs\dialogs.css" />
+    <Content Include="docs\examples\dialogs\dialogs.html" />
+    <Content Include="docs\examples\dialogs\dialogs.js" />
+    <Content Include="docs\examples\test.html" />
+    <Content Include="docs\examples\tiles\start.css" />
+    <Content Include="docs\examples\tiles\start.html" />
+    <Content Include="docs\examples\tiles\start.js" />
+    <Content Include="docs\extensions.html" />
+    <Content Include="docs\favicon.ico" />
+    <Content Include="docs\figures.html" />
+    <Content Include="docs\flex.html" />
+    <Content Include="docs\float.html" />
+    <Content Include="docs\footer.html" />
+    <Content Include="docs\forms.html" />
+    <Content Include="docs\functions.html" />
+    <Content Include="docs\gravatar.html" />
+    <Content Include="docs\grid.html" />
+    <Content Include="docs\header.html" />
+    <Content Include="docs\highlight\highlight.pack.js" />
+    <Content Include="docs\highlight\highlightjs-line-numbers.min.js" />
+    <Content Include="docs\highlight\styles\darcula.css" />
+    <Content Include="docs\highlight\styles\github-gist.css" />
+    <Content Include="docs\highlight\styles\github.css" />
+    <Content Include="docs\hints.html" />
+    <Content Include="docs\hotkeys.html" />
+    <Content Include="docs\i18n.html" />
+    <Content Include="docs\icons.html" />
+    <Content Include="docs\images.html" />
+    <Content Include="docs\images\1.jpg" />
+    <Content Include="docs\images\2.jpg" />
+    <Content Include="docs\images\3.jpg" />
+    <Content Include="docs\images\4.jpg" />
+    <Content Include="docs\images\5.jpg" />
+    <Content Include="docs\images\access.png" />
+    <Content Include="docs\images\ambass.jpg" />
+    <Content Include="docs\images\analog.jpg" />
+    <Content Include="docs\images\Battlefield_4_Icon.png" />
+    <Content Include="docs\images\bg-1.jpg" />
+    <Content Include="docs\images\bg-2.jpg" />
+    <Content Include="docs\images\bg-3.jpg" />
+    <Content Include="docs\images\bg-4.jpg" />
+    <Content Include="docs\images\bronze-medal.png" />
+    <Content Include="docs\images\checkmark.png" />
+    <Content Include="docs\images\ChernodubAr.jpg" />
+    <Content Include="docs\images\complementary.jpg" />
+    <Content Include="docs\images\desktop.png" />
+    <Content Include="docs\images\disk-network.png" />
+    <Content Include="docs\images\disk-os.png" />
+    <Content Include="docs\images\disk.png" />
+    <Content Include="docs\images\double-complementary.jpg" />
+    <Content Include="docs\images\email.svg" />
+    <Content Include="docs\images\excel.png" />
+    <Content Include="docs\images\file.png" />
+    <Content Include="docs\images\file0.png" />
+    <Content Include="docs\images\folder.png" />
+    <Content Include="docs\images\github.png" />
+    <Content Include="docs\images\gold-medal.png" />
+    <Content Include="docs\images\group.png" />
+    <Content Include="docs\images\help.png" />
+    <Content Include="docs\images\imena_logo.png" />
+    <Content Include="docs\images\jeki_chan.jpg" />
+    <Content Include="docs\images\jek_vorobey.jpg" />
+    <Content Include="docs\images\jetbrains.svg" />
+    <Content Include="docs\images\jolie.jpg" />
+    <Content Include="docs\images\keycdn-logo.svg" />
+    <Content Include="docs\images\location.png" />
+    <Content Include="docs\images\logo.png" />
+    <Content Include="docs\images\logo4.png" />
+    <Content Include="docs\images\m4-logo-social.png" />
+    <Content Include="docs\images\me.jpg" />
+    <Content Include="docs\images\me2.jpg" />
+    <Content Include="docs\images\me3.jpg" />
+    <Content Include="docs\images\media-server.png" />
+    <Content Include="docs\images\me_civil.jpg" />
+    <Content Include="docs\images\mirohost_logo.svg" />
+    <Content Include="docs\images\monochromatic.jpg" />
+    <Content Include="docs\images\network.png" />
+    <Content Include="docs\images\olshansky.svg" />
+    <Content Include="docs\images\olshanskysmall.jpg" />
+    <Content Include="docs\images\onedrive.png" />
+    <Content Include="docs\images\outlook.png" />
+    <Content Include="docs\images\phone.png" />
+    <Content Include="docs\images\phpstorm.png" />
+    <Content Include="docs\images\phpstorm.svg" />
+    <Content Include="docs\images\phpstormboxshot.png" />
+    <Content Include="docs\images\play-icon.png" />
+    <Content Include="docs\images\player_stop.png" />
+    <Content Include="docs\images\power.png" />
+    <Content Include="docs\images\powerpoint.png" />
+    <Content Include="docs\images\premium-medal.jpeg" />
+    <Content Include="docs\images\pumba-bg.jpg" />
+    <Content Include="docs\images\pumba.png" />
+    <Content Include="docs\images\pumba2.png" />
+    <Content Include="docs\images\round.png" />
+    <Content Include="docs\images\setup.png" />
+    <Content Include="docs\images\share.svg" />
+    <Content Include="docs\images\shvarcenegger.jpg" />
+    <Content Include="docs\images\silver-medal.png" />
+    <Content Include="docs\images\split-complementary.jpg" />
+    <Content Include="docs\images\square.jpg" />
+    <Content Include="docs\images\streamer.jpg" />
+    <Content Include="docs\images\tetradic.jpg" />
+    <Content Include="docs\images\timon_pumba.jpg" />
+    <Content Include="docs\images\triadic.jpg" />
+    <Content Include="docs\images\vin_d.jpg" />
+    <Content Include="docs\images\whats-new.png" />
+    <Content Include="docs\images\wind-rose.png" />
+    <Content Include="docs\images\word.png" />
+    <Content Include="docs\images\x-box.png" />
+    <Content Include="docs\index.html" />
+    <Content Include="docs\intro.html" />
+    <Content Include="docs\js\clipboard.min.js" />
+    <Content Include="docs\js\holder.min.js" />
+    <Content Include="docs\js\jquery-3.3.1.min.js" />
+    <Content Include="docs\js\list.min.js" />
+    <Content Include="docs\js\loader.js" />
+    <Content Include="docs\js\particles.min.js" />
+    <Content Include="docs\js\site.js" />
+    <Content Include="docs\keypad.html" />
+    <Content Include="docs\listview.html" />
+    <Content Include="docs\master.html" />
+    <Content Include="docs\media.html" />
+    <Content Include="docs\menu.html" />
+    <Content Include="docs\metro\css\metro-all.css" />
+    <Content Include="docs\metro\css\metro-all.min.css" />
+    <Content Include="docs\metro\css\metro-colors.css" />
+    <Content Include="docs\metro\css\metro-colors.min.css" />
+    <Content Include="docs\metro\css\metro-icons.css" />
+    <Content Include="docs\metro\css\metro-icons.min.css" />
+    <Content Include="docs\metro\css\metro-media.css" />
+    <Content Include="docs\metro\css\metro-media.min.css" />
+    <Content Include="docs\metro\css\metro-rtl.css" />
+    <Content Include="docs\metro\css\metro-rtl.min.css" />
+    <Content Include="docs\metro\css\metro.css" />
+    <Content Include="docs\metro\css\metro.min.css" />
+    <Content Include="docs\metro\css\schemes\red-alert-sans.css" />
+    <Content Include="docs\metro\css\schemes\red-alert-sans.min.css" />
+    <Content Include="docs\metro\css\schemes\red-alert.css" />
+    <Content Include="docs\metro\css\schemes\red-alert.min.css" />
+    <Content Include="docs\metro\js\metro.js" />
+    <Content Include="docs\metro\js\metro.min.js" />
+    <Content Include="docs\metro\mif\metro.svg" />
+    <Content Include="docs\micro-tpl.html" />
+    <Content Include="docs\mouse-wheel.html" />
+    <Content Include="docs\navview.html" />
+    <Content Include="docs\notify.html" />
+    <Content Include="docs\panels.html" />
+    <Content Include="docs\particles\particles.min.js" />
+    <Content Include="docs\popovers.html" />
+    <Content Include="docs\position.html" />
+    <Content Include="docs\progress.html" />
+    <Content Include="docs\rating.html" />
+    <Content Include="docs\ribbon-menu.html" />
+    <Content Include="docs\ripple.html" />
+    <Content Include="docs\schemes\red-alert.html" />
+    <Content Include="docs\scroll-events.html" />
+    <Content Include="docs\sidenav.html" />
+    <Content Include="docs\sidenavigation.html" />
+    <Content Include="docs\sitemap_getmetroui.xml" />
+    <Content Include="docs\sitemap_metroui.xml" />
+    <Content Include="docs\sizing.html" />
+    <Content Include="docs\slider.html" />
+    <Content Include="docs\spacing.html" />
+    <Content Include="docs\sponsors.html" />
+    <Content Include="docs\stepper.html" />
+    <Content Include="docs\storage.html" />
+    <Content Include="docs\streamer.html" />
+    <Content Include="docs\tables.html" />
+    <Content Include="docs\tabs.html" />
+    <Content Include="docs\template.html" />
+    <Content Include="docs\tiles.html" />
+    <Content Include="docs\timepicker.html" />
+    <Content Include="docs\toast.html" />
+    <Content Include="docs\treeview.html" />
+    <Content Include="docs\typography.html" />
+    <Content Include="docs\validator.html" />
+    <Content Include="docs\video.html" />
+    <Content Include="docs\windows.html" />
+    <Content Include="docs\wizard.html" />
+    <Content Include="icons\metro.svg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\metro.js" />
+    <Content Include="js\plugins\accordion.js" />
+    <Content Include="js\plugins\activity.js" />
+    <Content Include="js\plugins\app-bar.js" />
+    <Content Include="js\plugins\audio.js" />
+    <Content Include="js\plugins\button-group.js" />
+    <Content Include="js\plugins\calendar.js" />
+    <Content Include="js\plugins\calendarpicker.js" />
+    <Content Include="js\plugins\carousel.js" />
+    <Content Include="js\plugins\charms.js" />
+    <Content Include="js\plugins\checkbox.js" />
+    <Content Include="js\plugins\clock.js" />
+    <Content Include="js\plugins\collapse.js" />
+    <Content Include="js\plugins\countdown.js" />
+    <Content Include="js\plugins\cube.js" />
+    <Content Include="js\plugins\datepicker.js" />
+    <Content Include="js\plugins\dialog.js" />
+    <Content Include="js\plugins\donut.js" />
+    <Content Include="js\plugins\draggable.js" />
+    <Content Include="js\plugins\dropdown.js" />
+    <Content Include="js\plugins\file.js" />
+    <Content Include="js\plugins\gravatar.js" />
+    <Content Include="js\plugins\hint.js" />
+    <Content Include="js\plugins\input.js" />
+    <Content Include="js\plugins\keypad.js" />
+    <Content Include="js\plugins\listview.js" />
+    <Content Include="js\plugins\master.js" />
+    <Content Include="js\plugins\navview.js" />
+    <Content Include="js\plugins\notify.js" />
+    <Content Include="js\plugins\panel.js" />
+    <Content Include="js\plugins\popovers.js" />
+    <Content Include="js\plugins\progress.js" />
+    <Content Include="js\plugins\radio.js" />
+    <Content Include="js\plugins\rating.js" />
+    <Content Include="js\plugins\resizable.js" />
+    <Content Include="js\plugins\ribbon-menu.js" />
+    <Content Include="js\plugins\ripple.js" />
+    <Content Include="js\plugins\search.js" />
+    <Content Include="js\plugins\select.js" />
+    <Content Include="js\plugins\slider.js" />
+    <Content Include="js\plugins\stepper.js" />
+    <Content Include="js\plugins\streamer.js" />
+    <Content Include="js\plugins\switch.js" />
+    <Content Include="js\plugins\tabs.js" />
+    <Content Include="js\plugins\textarea.js" />
+    <Content Include="js\plugins\tiles.js" />
+    <Content Include="js\plugins\timepicker.js" />
+    <Content Include="js\plugins\toast.js" />
+    <Content Include="js\plugins\treeview.js" />
+    <Content Include="js\plugins\validator.js" />
+    <Content Include="js\plugins\video.js" />
+    <Content Include="js\plugins\window.js" />
+    <Content Include="js\plugins\wizard.js" />
+    <Content Include="js\utils\animation.js" />
+    <Content Include="js\utils\colors.js" />
+    <Content Include="js\utils\easing.js" />
+    <Content Include="js\utils\extensions.js" />
+    <Content Include="js\utils\hotkeys.js" />
+    <Content Include="js\utils\i18n.js" />
+    <Content Include="js\utils\md5.js" />
+    <Content Include="js\utils\mousewheel.js" />
+    <Content Include="js\utils\scroll-events.js" />
+    <Content Include="js\utils\storage.js" />
+    <Content Include="js\utils\tpl.js" />
+    <Content Include="js\utils\utilities.js" />
+    <Content Include="js\_\plugin.js" />
+    <Content Include="less\images\apps\menu.svg" />
+    <Content Include="less\images\inputs\calendar.svg" />
+    <Content Include="less\images\inputs\checkmark.svg" />
+    <Content Include="less\images\inputs\clock.svg" />
+    <Content Include="less\images\inputs\cross.svg" />
+    <Content Include="less\images\inputs\eye.svg" />
+    <Content Include="less\images\inputs\search.svg" />
+    <Content Include="less\images\media\dark\backward.svg" />
+    <Content Include="less\images\media\dark\dice.svg" />
+    <Content Include="less\images\media\dark\eject.svg" />
+    <Content Include="less\images\media\dark\embed.svg" />
+    <Content Include="less\images\media\dark\enlarge.svg" />
+    <Content Include="less\images\media\dark\equalizer.svg" />
+    <Content Include="less\images\media\dark\first.svg" />
+    <Content Include="less\images\media\dark\forward.svg" />
+    <Content Include="less\images\media\dark\last.svg" />
+    <Content Include="less\images\media\dark\list.svg" />
+    <Content Include="less\images\media\dark\loop.svg" />
+    <Content Include="less\images\media\dark\next.svg" />
+    <Content Include="less\images\media\dark\pause.svg" />
+    <Content Include="less\images\media\dark\play.svg" />
+    <Content Include="less\images\media\dark\prev.svg" />
+    <Content Include="less\images\media\dark\share.svg" />
+    <Content Include="less\images\media\dark\shrink.svg" />
+    <Content Include="less\images\media\dark\shuffle.svg" />
+    <Content Include="less\images\media\dark\stop.svg" />
+    <Content Include="less\images\media\dark\volume-decrease.svg" />
+    <Content Include="less\images\media\dark\volume-high.svg" />
+    <Content Include="less\images\media\dark\volume-increase.svg" />
+    <Content Include="less\images\media\dark\volume-low.svg" />
+    <Content Include="less\images\media\dark\volume-medium.svg" />
+    <Content Include="less\images\media\dark\volume-mute.svg" />
+    <Content Include="less\images\media\light\backward.svg" />
+    <Content Include="less\images\media\light\dice.svg" />
+    <Content Include="less\images\media\light\eject.svg" />
+    <Content Include="less\images\media\light\embed.svg" />
+    <Content Include="less\images\media\light\enlarge.svg" />
+    <Content Include="less\images\media\light\equalizer.svg" />
+    <Content Include="less\images\media\light\first.svg" />
+    <Content Include="less\images\media\light\forward.svg" />
+    <Content Include="less\images\media\light\last.svg" />
+    <Content Include="less\images\media\light\list.svg" />
+    <Content Include="less\images\media\light\loop.svg" />
+    <Content Include="less\images\media\light\next.svg" />
+    <Content Include="less\images\media\light\pause.svg" />
+    <Content Include="less\images\media\light\play.svg" />
+    <Content Include="less\images\media\light\prev.svg" />
+    <Content Include="less\images\media\light\share.svg" />
+    <Content Include="less\images\media\light\shrink.svg" />
+    <Content Include="less\images\media\light\shuffle.svg" />
+    <Content Include="less\images\media\light\stop.svg" />
+    <Content Include="less\images\media\light\volume-decrease.svg" />
+    <Content Include="less\images\media\light\volume-high.svg" />
+    <Content Include="less\images\media\light\volume-increase.svg" />
+    <Content Include="less\images\media\light\volume-low.svg" />
+    <Content Include="less\images\media\light\volume-medium.svg" />
+    <Content Include="less\images\media\light\volume-mute.svg" />
+    <Content Include="less\images\wizard\arrow-left.svg" />
+    <Content Include="less\images\wizard\arrow-right.svg" />
+    <Content Include="less\images\wizard\checkmark.svg" />
+    <Content Include="less\images\wizard\help.svg" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.dll" />
+    <Content Include="obj\Debug\TpFinalPracticaProfesional.pdb" />
+    <Content Include="Recursos\AgregarProveedor.png" />
+    <Content Include="Recursos\Ajustes.png" />
+    <Content Include="Recursos\AjustesNegro.png" />
+    <Content Include="Recursos\Articulo.png" />
+    <Content Include="Recursos\ArticuloMini.png" />
+    <Content Include="Recursos\ArticuloNegro.png" />
+    <Content Include="Recursos\AtrasNegro.png" />
+    <Content Include="Recursos\Blur-1.png" />
+    <Content Include="Recursos\Blur-2.png" />
+    <Content Include="Recursos\Blur-3.png" />
+    <Content Include="Recursos\Blur-4.png" />
+    <Content Include="Recursos\Blur-5.png" />
+    <Content Include="Recursos\Camion.png" />
+    <Content Include="Recursos\CamionNegro.png" />
+    <Content Include="Recursos\Check.png" />
+    <Content Include="Recursos\EditarNegro.png" />
+    <Content Include="Recursos\EditarNegro128.png" />
+    <Content Include="Recursos\EditarNegro48.png" />
+    <Content Include="Recursos\EditarProveedor.png" />
+    <Content Include="Recursos\EliminarProveedor.png" />
+    <Content Include="Recursos\Excel.png" />
+    <Content Include="Recursos\ExcelNegro.png" />
+    <Content Include="Recursos\Facturacion.png" />
+    <Content Include="Recursos\FacturacionNegro.png" />
+    <Content Include="Recursos\fundo.png" />
+    <Content Include="Recursos\imagen1.jpg" />
+    <Content Include="Recursos\imagen2.jpg" />
+    <Content Include="Recursos\imagen3.jpg" />
+    <Content Include="Recursos\imagen4.jpg" />
+    <Content Include="Recursos\imagen5.jpg" />
+    <Content Include="Recursos\imagen5C.jpg" />
+    <Content Include="Recursos\imagen6.jpg" />
+    <Content Include="Recursos\ImagenFondo.jpg" />
+    <Content Include="Recursos\PDFBlanco.png" />
+    <Content Include="Recursos\PDFNegro.png" />
+    <Content Include="Recursos\Pedido.png" />
+    <Content Include="Recursos\PedidoAgregar.png" />
+    <Content Include="Recursos\PedidoEditar.png" />
+    <Content Include="Recursos\PedidoELiminar.png" />
+    <Content Include="Recursos\PedidoEstado.png" />
+    <Content Include="Recursos\PedidoMini.png" />
+    <Content Include="Recursos\PedidoNegro.png" />
+    <Content Include="Recursos\ProveedorMini.png" />
+    <Content Include="Recursos\UserAgregar.png" />
+    <Content Include="Recursos\UserAgregarNegro.png" />
+    <Content Include="Recursos\UserClientes.png" />
+    <Content Include="Recursos\UserClientesNegro.png" />
+    <Content Include="Recursos\UserEditarNegro.png" />
+    <Content Include="Recursos\UserEliminarNegro.png" />
+    <Content Include="Recursos\UserEmpleado.png" />
+    <Content Include="Recursos\UserEmpleadoNegro.png" />
+    <Content Include="Recursos\UserListarNegro.png" />
+    <Content Include="Recursos\UserMenuClienteNegro.png" />
+    <Content Include="Recursos\Word.png" />
+    <Content Include="Recursos\WordNegro.png" />
+    <Content Include="StyleArticulo.css" />
+    <Content Include="StyleCliente.css" />
+    <Content Include="StyleMenu.css" />
+    <Content Include="StyleLogin.css" />
+    <Content Include="StylePedido.css" />
+    <Content Include="StyleProveedor.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarArticulo.aspx.cs">
+      <DependentUpon>AgregarArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarArticulo.aspx.designer.cs">
+      <DependentUpon>AgregarArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEmpleado.aspx.cs">
+      <DependentUpon>AgregarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarEmpleado.aspx.designer.cs">
+      <DependentUpon>AgregarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarFactura.aspx.cs">
+      <DependentUpon>AgregarFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarFactura.aspx.designer.cs">
+      <DependentUpon>AgregarFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPedido.aspx.cs">
+      <DependentUpon>AgregarPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarPedido.aspx.designer.cs">
+      <DependentUpon>AgregarPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProveedor.aspx.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarProveedor.aspx.designer.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarArticulo.aspx.cs">
+      <DependentUpon>EditarArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarArticulo.aspx.designer.cs">
+      <DependentUpon>EditarArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCliente.aspx.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarCliente.aspx.designer.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEmpleado.aspx.cs">
+      <DependentUpon>EditarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarEmpleado.aspx.designer.cs">
+      <DependentUpon>EditarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarPedido.aspx.cs">
+      <DependentUpon>EditarPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarPedido.aspx.designer.cs">
+      <DependentUpon>EditarPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProveedor.aspx.cs">
+      <DependentUpon>EditarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarProveedor.aspx.designer.cs">
+      <DependentUpon>EditarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoPedido.aspx.cs">
+      <DependentUpon>EstadoPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EstadoPedido.aspx.designer.cs">
+      <DependentUpon>EstadoPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArticulo.aspx.cs">
+      <DependentUpon>ListaArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaArticulo.aspx.designer.cs">
+      <DependentUpon>ListaArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEmpleado.aspx.cs">
+      <DependentUpon>ListaEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaEmpleado.aspx.designer.cs">
+      <DependentUpon>ListaEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarCliente.aspx.cs">
+      <DependentUpon>ListarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarCliente.aspx.designer.cs">
+      <DependentUpon>ListarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFactura.aspx.cs">
+      <DependentUpon>ListarFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarFactura.aspx.designer.cs">
+      <DependentUpon>ListarFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarPedido.aspx.cs">
+      <DependentUpon>ListarPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarPedido.aspx.designer.cs">
+      <DependentUpon>ListarPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarProveedor.aspx.cs">
+      <DependentUpon>ListarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarProveedor.aspx.designer.cs">
+      <DependentUpon>ListarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterArticulo.Master.cs">
+      <DependentUpon>MasterArticulo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterArticulo.Master.designer.cs">
+      <DependentUpon>MasterArticulo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterCliente.Master.cs">
+      <DependentUpon>MasterCliente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterCliente.Master.designer.cs">
+      <DependentUpon>MasterCliente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterEmpleado.Master.cs">
+      <DependentUpon>MasterEmpleado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterEmpleado.Master.designer.cs">
+      <DependentUpon>MasterEmpleado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterFacturacion.Master.cs">
+      <DependentUpon>MasterFacturacion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterFacturacion.Master.designer.cs">
+      <DependentUpon>MasterFacturacion.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPedido.Master.cs">
+      <DependentUpon>MasterPedido.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPedido.Master.designer.cs">
+      <DependentUpon>MasterPedido.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterProveedor.Master.cs">
+      <DependentUpon>MasterProveedor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterProveedor.Master.designer.cs">
+      <DependentUpon>MasterProveedor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterUsuario.Master.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterUsuario.Master.designer.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUsuario.aspx.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuUsuario.aspx.designer.cs">
+      <DependentUpon>MenuUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarManual.aspx.cs">
+      <DependentUpon>MostrarManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarManual.aspx.designer.cs">
+      <DependentUpon>MostrarManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stock.aspx.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock.aspx.designer.cs">
+      <DependentUpon>Stock.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controladoras\Controladoras.csproj">
+      <Project>{F1A5398F-F645-44DC-9CD7-87AE6C591BFB}</Project>
+      <Name>Controladoras</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntidadesDTO\EntidadesDTO.csproj">
+      <Project>{783592AE-FC93-464A-9E45-8F884AD03FAE}</Project>
+      <Name>EntidadesDTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{E55D5209-C144-4D13-BF00-2ECF0E0F5878}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61811</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61811/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="SelfHostServer">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:61811/" workingDir="" />
+          </servers>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.8.2\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
